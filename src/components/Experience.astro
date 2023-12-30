@@ -1,0 +1,33 @@
+---
+import ExperienceItem from "./ExperienceItem.astro";
+const EXPERIENCE = [
+  {
+    date: "Abril 2022",
+    title: "Application UI code in Tailwind CSS",
+    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus adipisci ex totam vel ea corrupti atque nemo quas minima possimus soluta magni eum ad id aliquam temporibus, commodi consequuntur harum.",
+    link: "#",
+  },
+  {
+    date: "March 2022",
+    title: "Application UI code in Tailwind CSS",
+    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias eos perspiciatis distinctio delectus molestias dolores dolorem ex quam repellat ipsa aliquam, ullam deleniti vitae consequuntur. Vero adipisci iure nihil nisi.",
+    link: "#",
+  },
+  {
+    date: "February 2022",
+    title: "Application UI code in Tailwind CSS",
+    description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi recusandae officiis vitae neque perferendis, qui possimus animi obcaecati numquam impedit esse dolore. Molestiae quas delectus voluptate velit blanditiis omnis necessitatibus.",
+    link: "#",
+  },
+];
+---
+
+<ol class="relative border-s border-gray-200 ml-3">
+  {
+    EXPERIENCE.map((experience) => (
+      <li class="mb-10 ms-4">
+        <ExperienceItem {...experience} />
+      </li>
+    ))
+  }
+</ol>
